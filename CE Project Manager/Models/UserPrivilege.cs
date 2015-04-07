@@ -8,6 +8,7 @@ namespace CDP_Manager.Models
 {
     public class UserPrivilege
     {
+        [Key]
         public int PrivilegeId { get; set; }
 
         [MaxLength(45), StringLength(45, ErrorMessage = "{0} can have max length of {1} characters")]

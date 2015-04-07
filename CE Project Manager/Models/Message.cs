@@ -8,6 +8,7 @@ namespace CDP_Manager.Models
 {
     public class Message
     {
+        [Key]
         public int MessageId { get; set; }
         
         public virtual User Sender { get; set; }

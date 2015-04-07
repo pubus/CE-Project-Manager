@@ -8,6 +8,7 @@ namespace CDP_Manager.Models
 {
     public class News
     {
+        [Key]
         public int NewsId { get; set; }
 
         [MaxLength(1024), StringLength(1024, ErrorMessage = "{0} can have max length of {1} characters")]

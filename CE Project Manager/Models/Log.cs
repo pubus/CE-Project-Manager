@@ -8,6 +8,7 @@ namespace CDP_Manager.Models
 {
     public class Log
     {
+        [Key]
         public int LogId { get; set; }
 
         public DateTime DateTime { get; set; }
