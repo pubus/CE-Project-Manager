@@ -26,5 +26,12 @@ namespace CE_Project_Manager.Controllers
 
             return View();
         }
+
+        public ActionResult Users()
+        {
+            ViewBag.Message = "Users administration page.";
+
+            return View();
+        }
     }
 }

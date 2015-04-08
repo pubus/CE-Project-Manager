@@ -5,11 +5,13 @@ namespace CE_Project_Manager.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CE_Project_Manager.Models.CeSystemContext>
+    internal sealed class CeSystemConfiguration : DbMigrationsConfiguration<CE_Project_Manager.Models.CeSystemContext>
     {
-        public Configuration()
+        public CeSystemConfiguration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+
+            SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
         }
 
         protected override void Seed(CE_Project_Manager.Models.CeSystemContext context)
